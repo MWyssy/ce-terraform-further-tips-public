@@ -51,6 +51,8 @@ You should then make use of your module within a **module-use-example.tf**
 
 ## Written questions
 
+Add your answers to these questions in a file called **SOLUTIONS.md**
+
 1. You might have noticed a file called `.terraform.lock.hcl` - what does this file do?
 
 2. Should you include the `.terraform.lock.hcl` within version control and if so why? or if not why not?
