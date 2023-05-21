@@ -10,7 +10,15 @@ Throughout this repository you are going to explore some further terraform langu
 
 ## Instructions
 
-### 1. Variables and conditions
+### 1. Growing your toolset
+
+If you are using VS Code to write your terraform, take a look at the VS Code extension
+
+[Hashicorp Terraform VS Code Extension](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+
+Have a read over some of the tips and try installing it into your VS Code setup.
+
+### 2. Variables and conditions
 
 Using terraform variables define a variable that indicates whether or not to create an S3 bucket.
 
@@ -22,7 +30,7 @@ Your solution should include:
 * A **s3-conditional.tf** file that contains the terraform code
 * A **variables.tf** file that contains your variables - the S3 variable should have a default that indicates the book should not be made
 
-### 2. Modules
+### 3. Modules
 
 A Terraform module is a collection of Terraform configuration files that can be used to create a specific type of infrastructure. 
 
