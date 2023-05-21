@@ -22,7 +22,23 @@ Your solution should include:
 * A **s3-conditional.tf** file that contains the terraform code
 * A **variables.tf** file that contains your variables - the S3 variable should have a default that indicates the book should not be made
 
+### 2. Modules
 
+A Terraform module is a collection of Terraform configuration files that can be used to create a specific type of infrastructure. 
+
+Modules are a way to organise and reuse Terraform code, and they can be used to create complex infrastructure with a single command.
+
+In this exercise you will create your own custom [Terraform module](https://developer.hashicorp.com/terraform/language/modules)
+
+Your module should create:
+
+* An EC2 instance within the default VPC
+* A new key pair for the instance
+* A security group that allows SSH from your IP address (see if you can work out a dynamic way of obtaining your IP address)
+
+**🗒️ Note:** Avoid using hard coded inputs within your module. For example the VPC ID should be an input to the module and not hard coded so that the module is re-usable by other people. There are a number of opportunities where you should avoid using hard coded aspects - each time you find yourself hard coding a value such as the instance name then think about how you can allow that to be variable driven and configured instead of hard coded.
+
+You should then make use of your module within a **module-use-example.tf**
 
 
 ## Written questions
@@ -50,3 +66,7 @@ You should just be able to run `terraform destroy`
 3. Share your GitHub link
 
 4. Tear things down as described above
+
+## Further reading
+
+[How to build and use your own terraform module](https://developer.hashicorp.com/terraform/tutorials/modules/module-create)
