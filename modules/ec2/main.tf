@@ -1,4 +1,5 @@
 resource "aws_instance" "default_ec2" {
+
   ami                         = var.ami
   instance_type               = var.instance_type
   monitoring                  = var.monitoring

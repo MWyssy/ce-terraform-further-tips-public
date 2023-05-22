@@ -10,7 +10,7 @@
 
 ## 3. Do you think a `tfvars` file should be committed to version control?
 
-> Yes, the tfvars files should be committed to version control as they contain all of the different variable setups required for the project to run as intended.
+> It depends. In general, yes as you would likely want to share your variables with your team. However, there could be sensitive information in the variables that you do not want to make public, for example, passwords. In which case, you would want to keep the file out of version control.
 
 ## 4. In one of the exercises it mentioned calling the file a specific name of **terraform.tfvars**, do you think this was intentional and if so why?
 
